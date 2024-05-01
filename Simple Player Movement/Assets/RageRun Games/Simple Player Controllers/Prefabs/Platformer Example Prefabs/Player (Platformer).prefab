@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3296582386496419448}
+  - component: {fileID: 8724309979360761970}
   - component: {fileID: 1111328760867605661}
   - component: {fileID: 240738398211782175}
   - component: {fileID: 4198942101333727240}
@@ -35,6 +36,33 @@ Transform:
   - {fileID: 2946051273922661002}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &8724309979360761970
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2264994931811314047}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &1111328760867605661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -110,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clonePrefab: {fileID: -136653063635683441, guid: f63f4b5d8c1d66b4b9504e1d8fec2813, type: 3}
-  maxClones: 10
+  maxClones: 1
   durationBetweenClones: 0.075
   cloneAlpha: 0.9
   cloneFadeSpeed: 0.1

@@ -5,7 +5,8 @@ public class CloneObject : MonoBehaviour
     enum ParticlePlayMode
     {
        PlayOnSpawn,
-       PlayOnRelease
+       PlayOnRelease,
+       PlayOnSpawnAndRelease
     }
     
     [SerializeField] ParticlePlayMode particlePlayMode;
@@ -30,7 +31,6 @@ public class CloneObject : MonoBehaviour
     {
         transform.localScale = Vector3.one;
         particleSystem.transform.parent = null;
-        
        
     }
 
@@ -47,7 +47,7 @@ public class CloneObject : MonoBehaviour
         {
             shrinkTimer = shrinkDuration;
             
-            if(particlePlayMode == ParticlePlayMode.PlayOnRelease)
+            if(particlePlayMode == ParticlePlayMode.PlayOnRelease || particlePlayMode == ParticlePlayMode.PlayOnSpawnAndRelease)
             {
                 particleSystem.transform.position = transform.position;
                 particleSystem.Play();
@@ -63,7 +63,7 @@ public class CloneObject : MonoBehaviour
         transform.position = mainBodyToCloneFrom.position;
         transform.rotation = mainBodyToCloneFrom.rotation;
         
-        if (particlePlayMode == ParticlePlayMode.PlayOnSpawn)
+        if (particlePlayMode == ParticlePlayMode.PlayOnSpawn || particlePlayMode == ParticlePlayMode.PlayOnSpawnAndRelease)
         {
             particleSystem.transform.position = transform.position;
             particleSystem.Play();

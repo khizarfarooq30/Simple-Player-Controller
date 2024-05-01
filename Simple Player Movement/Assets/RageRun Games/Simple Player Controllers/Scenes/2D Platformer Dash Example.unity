@@ -558,6 +558,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1446891679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1446891681}
+  - component: {fileID: 1446891680}
+  m_Layer: 0
+  m_Name: Coin Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1446891680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446891679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31f231664a8ca041b0bedfff21fe35d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 8457266012593614332, guid: 9ce34d0db8e5eee46b5a82492a978f3b, type: 3}
+  spawnRate: 1
+  minX: -5
+  maxX: 5
+--- !u!4 &1446891681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446891679}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1600596173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -661,20 +709,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 240738398211782175, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
-      propertyPath: rawAxis
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1558303988781762076, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1558303988781762076, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1558303988781762076, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9
+      propertyPath: dashMultiplier
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 2264994931811314047, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: m_Name
@@ -720,8 +756,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7448114089337368744, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: maxClones
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: durationBetweenClones
+      value: 0.05
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -733,3 +776,4 @@ SceneRoots:
   - {fileID: 1608331794}
   - {fileID: 906064003}
   - {fileID: 7296399399016790930}
+  - {fileID: 1446891681}
