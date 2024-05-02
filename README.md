@@ -46,9 +46,7 @@ To integrate player movement or cloning mechanics into your own Unity project, f
 
 ## Showcase
 
-
-
-Stay tuned for updates and visual content showcasing the gameplay features!
+https://github.com/khizarfarooq30/Simple-Player-Controller/assets/24452001/f6dfdc20-ac28-496a-9cd1-07665ee1ecd5
 
 ## Contributing
 
