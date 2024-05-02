@@ -2,33 +2,34 @@ using UnityEngine;
 
 public class SquishAndStretch : MonoBehaviour
 {
-    public Transform Sprite;
-    public float Stretch = 0.1f;
-    [SerializeField] private Transform squashParent;
- 
-    private Rigidbody2D _rigidbody;
-    private Vector3 _originalScale;
+    public Transform characterSpriteTransform;
+    [SerializeField] private Transform anchor;
+    
+    public float stretch = 0.1f;
+   
+    private Rigidbody2D rigidbody2d;
+    private Vector3 initialScale;
  
     private void Start()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
-        _originalScale = Sprite.transform.localScale;
+        rigidbody2d = GetComponent<Rigidbody2D>();
+        initialScale = characterSpriteTransform.transform.localScale;
     }
  
     private void Update()
     {
-        Sprite.parent = transform;
-        Sprite.localPosition = Vector3.zero;
-        Sprite.localScale = _originalScale;
+        characterSpriteTransform.parent = transform;
+        characterSpriteTransform.localPosition = Vector3.zero;
+        characterSpriteTransform.localScale = initialScale;
       
-        squashParent.localScale = Vector3.one;
-        squashParent.position = transform.position;
+        anchor.localScale = Vector3.one;
+        anchor.position = transform.position;
  
-        Vector3 velocity = _rigidbody.velocity;
+        Vector3 velocity = rigidbody2d.velocity;
  
-        var scaleX = 1.0f + (velocity.magnitude * Stretch);
+        var scaleX = 1.0f + (velocity.magnitude * stretch);
         var scaleY = 1.0f / scaleX;
-        Sprite.parent = squashParent;
-        squashParent.localScale = new Vector3(scaleX, scaleY, 1.0f);
+        characterSpriteTransform.parent = anchor;
+        anchor.localScale = new Vector3(scaleX, scaleY, 1.0f);
     }
 }
