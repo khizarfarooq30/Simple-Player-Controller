@@ -34,7 +34,6 @@ The project includes a cloning mechanic implemented with the following scripts:
 ### Visual Feel
 
 - **SquishAndStretch**: Adds squash and stretch effect to the player character based on its velocity, enhancing visual feedback during movement.
-- **Spark Particle Effects**: Adds extra feel to the dash effect and clone effect.
 
 ## Usage
 
