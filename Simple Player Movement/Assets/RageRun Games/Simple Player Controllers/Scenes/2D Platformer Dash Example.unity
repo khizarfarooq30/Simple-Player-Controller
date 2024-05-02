@@ -705,60 +705,52 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
-      propertyPath: cloneScaleCurve.m_Curve.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: cloneScaleCurve.m_Curve.Array.data[0].time
-      value: 0.0026817322
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: cloneScaleCurve.m_Curve.Array.data[1].time
-      value: 0.49029192
-      objectReference: {fileID: 0}
-    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
-      propertyPath: cloneScaleCurve.m_Curve.Array.data[2].time
-      value: 0.9946289
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: cloneScaleCurve.m_Curve.Array.data[0].value
-      value: 0.99057007
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: cloneScaleCurve.m_Curve.Array.data[1].value
-      value: 0.9800688
-      objectReference: {fileID: 0}
-    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
-      propertyPath: cloneScaleCurve.m_Curve.Array.data[2].value
-      value: 0.01651001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: cloneScaleCurve.m_Curve.Array.data[0].inSlope
-      value: -0.04573875
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: cloneScaleCurve.m_Curve.Array.data[1].inSlope
-      value: -Infinity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: cloneScaleCurve.m_Curve.Array.data[0].outSlope
-      value: -0.04573875
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: cloneScaleCurve.m_Curve.Array.data[1].inWeight
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: cloneScaleCurve.m_Curve.Array.data[1].outSlope
-      value: -Infinity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: cloneScaleCurve.m_Curve.Array.data[0].outWeight
-      value: 0.10405426
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
-      propertyPath: cloneScaleCurve.m_Curve.Array.data[1].outWeight
-      value: 0
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[0].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[1].tangentMode
+      value: 34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
