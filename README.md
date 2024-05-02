@@ -1,10 +1,10 @@
 # Simple Player Controller with Cloning Ability
 
-Welcome to the Simple Player Controller with Cloning Ability Unity project! This project consists of scripts and assets for creating engaging gameplay experiences. Below, you'll find an overview of the project's structure and functionality.
+Welcome to the Simple Player Controller with Cloning Ability Unity project! This project features a flexible player controller with different movement behaviors and the ability to create clones of the player character. Below, you'll find an overview of the project's structure and functionality.
 
 ## Overview
 
-This project is developed using Unity, a powerful game development platform. It contains various scripts and components that handle player movement, cloning mechanics, and more. The project is organized into different script files, each serving a specific purpose.
+This project utilizes Unity for game development and includes various scripts that handle player movement, cloning mechanics, and visual effects.
 
 ## Installation
 
@@ -19,19 +19,22 @@ To use this project, follow these steps:
 
 ### Player Movement
 
-This project implements player movement using two different scripts:
+The player movement is implemented using different scripts:
 
-- **PlatformerPlayerController**: Handles movement for a platformer-style character.
-- **UfoMover**: Controls movement for a UFO-like character.
-
-Both scripts provide smooth movement mechanics and allow for customization of speed and rotation.
+- **PlatformerPlayerController**: Provides movement for a platformer-style character with the ability to jump and dash.
+- **UfoMover**: Controls movement for a UFO-like character, allowing smooth directional movement and rotation.
 
 ### Cloning Mechanism
 
 The project includes a cloning mechanic implemented with the following scripts:
 
-- **CloneObject**: Represents a cloned object in the game world. It handles behaviors such as shrinking and fading.
+- **CloneObject**: Represents a cloned object in the game world. It handles behaviors such as shrinking, fading, and applying visual effects.
 - **CloneController**: Manages the spawning and behavior of clones. It allows for the creation of multiple clones with adjustable parameters.
+
+### Visual Feel
+
+- **SquishAndStretch**: Adds squash and stretch effect to the player character based on its velocity, enhancing visual feedback during movement.
+- **Spark Particle Effects**: Adds extra feel to the dash effect and clone effect.
 
 ## Usage
 
@@ -42,9 +45,9 @@ To integrate player movement or cloning mechanics into your own Unity project, f
 3. Customize the parameters in the Inspector to suit your game's requirements.
 4. Test and iterate on your implementation to achieve the desired gameplay experience.
 
-## Media
+## Showcase
 
-[Placeholder for video showcase or images]
+
 
 Stay tuned for updates and visual content showcasing the gameplay features!
 
@@ -58,4 +61,4 @@ This project is licensed under the [MIT License](LICENSE), allowing for both per
 
 ---
 
-Feel free to reach out if you have any questions or need further assistance. Happy game development!
+Feel free to reach out if you have any questions or need further assistance. Enjoy developing your game!
