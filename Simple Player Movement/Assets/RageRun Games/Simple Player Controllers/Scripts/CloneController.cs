@@ -13,6 +13,8 @@ public class CloneController : MonoBehaviour
     [SerializeField] private float durationBetweenClones = 0.5f;
     [SerializeField] private float cloneAlpha = 0.9f;
     [SerializeField] private float cloneFadeSpeed = 0.5f;
+    
+    [SerializeField] private AnimationCurve cloneScaleCurve;
     [SerializeField] private Gradient cloneColorGradient;
 
     private float startCloneAlpha = 0.9f;
@@ -57,6 +59,7 @@ public class CloneController : MonoBehaviour
             clone.SetSprite(clone.Sprite);
             cloneAlpha -= cloneFadeSpeed;
             clone.SetColorWithAlpha(cloneColorGradient.Evaluate(cloneAlpha), cloneAlpha);
+            clone.ShrinkScaleOverTime(cloneScaleCurve.Evaluate(cloneAlpha));
 
             yield return new WaitForSeconds(durationBetweenClones);
         }

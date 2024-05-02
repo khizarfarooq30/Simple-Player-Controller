@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1111328760867605661}
   - component: {fileID: 240738398211782175}
   - component: {fileID: 4198942101333727240}
+  - component: {fileID: 4628496030035193530}
   m_Layer: 0
   m_Name: Player (Platformer)
   m_TagString: Player
@@ -33,7 +34,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2946051273922661002}
+  - {fileID: 89369765010403254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &8724309979360761970
@@ -59,7 +60,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -123,8 +124,10 @@ MonoBehaviour:
   maxSpeed: 10
   lerpSpeed: 2
   rawAxis: 0
-  dashMultiplier: 2
+  dashForce: 12
+  jumpForce: 10
   rotationClampValue: 15
+  dashDuration: 0.5
 --- !u!114 &4198942101333727240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,10 +141,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clonePrefab: {fileID: -136653063635683441, guid: f63f4b5d8c1d66b4b9504e1d8fec2813, type: 3}
-  maxClones: 1
-  durationBetweenClones: 0.075
+  maxClones: 15
+  durationBetweenClones: 0.05
   cloneAlpha: 0.9
-  cloneFadeSpeed: 0.1
+  cloneFadeSpeed: 0.06666667
+  cloneScaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0026817322
+      value: 0.99057007
+      inSlope: -0.04573875
+      outSlope: -0.04573875
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.10405426
+    - serializedVersion: 3
+      time: 0.49029192
+      value: 0.9800688
+      inSlope: -Infinity
+      outSlope: -Infinity
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.9946289
+      value: 0.01651001
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   cloneColorGradient:
     serializedVersion: 2
     key0: {r: 0.7558495, g: 0.4392157, b: 0.8039216, a: 1}
@@ -172,6 +208,21 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
+--- !u!114 &4628496030035193530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2264994931811314047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d8301d10ef62a4dbd60d781eeae0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sprite: {fileID: 2946051273922661002}
+  Stretch: 0.02
+  squashParent: {fileID: 89369765010403254}
 --- !u!1 &2860235116811929352
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,11 +248,43 @@ Transform:
   m_GameObject: {fileID: 2860235116811929352}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.358, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1558303988781762076}
+  m_Father: {fileID: 89369765010403254}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3439668104547879887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 89369765010403254}
+  m_Layer: 0
+  m_Name: Anchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &89369765010403254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3439668104547879887}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.358, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2946051273922661002}
   m_Father: {fileID: 3296582386496419448}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3622872445287132857

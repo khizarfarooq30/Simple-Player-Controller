@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6547376d10224be699bbb2eab5d3c339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particlePlayMode: 2
+  particlePlayMode: 0
   shrinkSpeed: 2
   shrinkDuration: 0.5
   spriteRenderer: {fileID: 2074769785748321611}

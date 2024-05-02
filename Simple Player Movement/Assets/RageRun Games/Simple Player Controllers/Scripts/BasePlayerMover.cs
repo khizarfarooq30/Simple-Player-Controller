@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class BasePlayerMover : MonoBehaviour, IPlayerMover, IPlayerInputs
+public abstract class BasePlayerMover : MonoBehaviour
 {
     [SerializeField] protected float maxSpeed = 25f;
     [SerializeField] protected float lerpSpeed = 8f;

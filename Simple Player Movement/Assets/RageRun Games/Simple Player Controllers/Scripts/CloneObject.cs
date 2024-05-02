@@ -31,7 +31,6 @@ public class CloneObject : MonoBehaviour
     {
         transform.localScale = Vector3.one;
         particleSystem.transform.parent = null;
-       
     }
 
     private void Update()
@@ -62,6 +61,7 @@ public class CloneObject : MonoBehaviour
     {
         transform.position = mainBodyToCloneFrom.position;
         transform.rotation = mainBodyToCloneFrom.rotation;
+        transform.localScale = mainBodyToCloneFrom.localScale;
         
         if (particlePlayMode == ParticlePlayMode.PlayOnSpawn || particlePlayMode == ParticlePlayMode.PlayOnSpawnAndRelease)
         {
@@ -83,6 +83,11 @@ public class CloneObject : MonoBehaviour
 
         var main = particleSystem.main;
         main.startColor = new Color(newColor.r, newColor.g, newColor.b);
+    }
+    
+    public void ShrinkScaleOverTime(float shrinkSpeed)
+    {
+        transform.localScale = Vector3.one * shrinkSpeed;
     }
 
     public void Shrink(float shrinkSpeed)

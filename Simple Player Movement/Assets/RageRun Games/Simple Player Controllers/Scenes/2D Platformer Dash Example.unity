@@ -558,54 +558,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1446891679
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1446891681}
-  - component: {fileID: 1446891680}
-  m_Layer: 0
-  m_Name: Coin Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1446891680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446891679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a31f231664a8ca041b0bedfff21fe35d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinPrefab: {fileID: 8457266012593614332, guid: 9ce34d0db8e5eee46b5a82492a978f3b, type: 3}
-  spawnRate: 1
-  minX: -5
-  maxX: 5
---- !u!4 &1446891681
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446891679}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1600596173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -708,10 +660,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 240738398211782175, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
-      propertyPath: dashMultiplier
-      value: 1.2
-      objectReference: {fileID: 0}
     - target: {fileID: 2264994931811314047, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
       propertyPath: m_Name
       value: Player (Platformer)
@@ -757,12 +705,60 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
-      propertyPath: maxClones
-      value: 2
+      propertyPath: cloneScaleCurve.m_Curve.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
-      propertyPath: durationBetweenClones
-      value: 0.05
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[0].time
+      value: 0.0026817322
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[1].time
+      value: 0.49029192
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[2].time
+      value: 0.9946289
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[0].value
+      value: 0.99057007
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[1].value
+      value: 0.9800688
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[2].value
+      value: 0.01651001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[0].inSlope
+      value: -0.04573875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[1].inSlope
+      value: -Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[0].outSlope
+      value: -0.04573875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[1].outSlope
+      value: -Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[0].outWeight
+      value: 0.10405426
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198942101333727240, guid: 8603a32d5f30e1f40b1a9cf30a9a1539, type: 3}
+      propertyPath: cloneScaleCurve.m_Curve.Array.data[1].outWeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -776,4 +772,3 @@ SceneRoots:
   - {fileID: 1608331794}
   - {fileID: 906064003}
   - {fileID: 7296399399016790930}
-  - {fileID: 1446891681}
