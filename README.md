@@ -20,9 +20,14 @@ To use this project, follow these steps:
 ### Player Movement
 
 The player movement is implemented using different scripts:
-
-- **PlatformerPlayerController**: Provides movement for a platformer-style character with the ability to jump and dash.
 - **UfoMover**: Controls movement for a UFO-like character, allowing smooth directional movement and rotation.
+  
+- **PlatformerPlayerController**: Provides movement for a platformer-style character with the ability to jump, dash, and swing.
+- **New Feature**: Added swinging mechanics for traversal through hooks.
+- **Updated Features**:
+  - Refined dash behavior for smoother execution and control.
+  - Improved jumping mechanics with grounded check for more precise jumps.
+ 
 
 ### Cloning Mechanism
 
