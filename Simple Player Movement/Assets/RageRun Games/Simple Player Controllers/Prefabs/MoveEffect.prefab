@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9175328399578826171}
   - component: {fileID: 5857327120205099268}
   m_Layer: 0
-  m_Name: Spark
+  m_Name: MoveEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
