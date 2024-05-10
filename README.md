@@ -27,6 +27,7 @@ The player movement is implemented using different scripts:
 - **Updated Features**:
   - Refined dash behavior for smoother execution and control.
   - Improved jumping mechanics with grounded check for more precise jumps.
+  - Added particle effects on move, jump and land.
  
 
 ### Cloning Mechanism
@@ -52,6 +53,8 @@ To integrate player movement or cloning mechanics into your own Unity project, f
 ## Showcase
 
 https://github.com/khizarfarooq30/Simple-Player-Controller/assets/24452001/f6dfdc20-ac28-496a-9cd1-07665ee1ecd5
+
+https://github.com/khizarfarooq30/Simple-Player-Controller/assets/24452001/4b7950a2-cd68-4e83-b028-16285c68ffcd
 
 ## Contributing
 
